@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Signup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:lightslategray;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/contacts">contacts</a>
+        <a href="/signup">registation</a>
+        <a href="/login">Login</a>
+        <a href="/about">About</a>
+        <a href="/">Home</a>
+    </div>
+</body>
+    <div class="container">
+        <h2> Signup</h2>
+        <form action="registation page.html" method="POST">
+        <form id="signupForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="event">Event Preference:</label>
+            <select id="event" name="event">
+                <option value="event-1">MARRIAGE</option>
+                <option value="event2">BIRTHDAY PARTIES</option>
+                <option value="event3">SPORTES EVENT</option>
+            </select>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript code for handling form submission (you can add more validation)
+        document.getElementById('signupForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from submitting
+            // You can add code here to send the form data to your server or perform other actions.
+            // For example:
+            const formData = new FormData(this);
+            // Use formData to send the data via AJAX or other methods.
+        });
+    </script>
+</body>
+</html>

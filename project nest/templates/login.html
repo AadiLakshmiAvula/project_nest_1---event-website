@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            background-image: url("");
+            font-family: Arial, sans-serif;
+            background-color: grey;
+        }
+
+        .login-container {
+            max-width: 350px;
+            margin:0 auto;
+            padding: 20px;
+            background-color:#f4f4f4;
+            border: 1px solid #b10f0f;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-container h2 {
+            text-align: center;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container label {
+            margin-bottom: 10px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/contacts">contacts</a>
+        <a href="/signup">registation</a>
+        <a href="/login">Login</a>
+        <a href="/about">About</a>
+        <a href="/home">Home</a>
+       
+       
+       
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/registration">
+            <!-- ... Your form fields ... -->
+        
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" <a href="/registration">registation</a> value="Login">
+        </form>
+    </div>
+</body>
+</html>
